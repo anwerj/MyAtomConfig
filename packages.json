@@ -1,0 +1,9 @@
+{
+    "packages" : [
+        "atom-ternjs",
+        "javascript-snippets",
+        "jshint",
+        "tab-switcher",
+        "toggle-quotes"
+    ]
+}
