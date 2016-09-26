@@ -1,0 +1,21 @@
+"*":
+  "atom-ternjs":
+    displayAboveSnippets: true
+    lint: true
+    useSnippets: true
+    useSnippetsAndFunction: true
+  core:
+    themes: [
+      "atom-light-ui"
+      "atom-light-syntax"
+    ]
+  editor:
+    autoIndentOnPaste: false
+    fontSize: 11
+    invisibles: {}
+    scrollPastEnd: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "673b8dff-d9f8-9fa0-92b7-408c2c8590e8"
+  welcome:
+    showOnStartup: false
