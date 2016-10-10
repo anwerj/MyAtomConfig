@@ -2,6 +2,9 @@
   "atom-ternjs":
     displayAboveSnippets: true
     lint: true
+  "color-picker":
+    preferredFormat: "HEX"
+    uppercaseColorValues: true
     useSnippets: true
     useSnippetsAndFunction: true
   core:
@@ -11,11 +14,21 @@
     ]
   editor:
     autoIndentOnPaste: false
-    fontSize: 11
+    fontSize: 12
     invisibles: {}
+    lineHeight: 1.2
+    preferredLineLength: 160
     scrollPastEnd: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 4
     tabLength: 4
+    tabType: "soft"
   "exception-reporting":
     userId: "673b8dff-d9f8-9fa0-92b7-408c2c8590e8"
   welcome:
     showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: false
