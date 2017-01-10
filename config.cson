@@ -8,13 +8,17 @@
     useSnippets: true
     useSnippetsAndFunction: true
   core:
+    disabledPackages: [
+      "minimap-git-diff"
+    ]
+    telemetryConsent: "limited"
     themes: [
       "atom-light-ui"
       "atom-light-syntax"
     ]
   editor:
     autoIndentOnPaste: false
-    fontSize: 12
+    fontSize: 11
     invisibles: {}
     lineHeight: 1.2
     preferredLineLength: 160
@@ -25,8 +29,15 @@
     softWrapHangingIndent: 4
     tabLength: 4
     tabType: "soft"
+    zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "673b8dff-d9f8-9fa0-92b7-408c2c8590e8"
+  minimap:
+    absoluteMode: true
+    displayCodeHighlights: false
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
   welcome:
     showOnStartup: false
   whitespace:

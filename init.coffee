@@ -27,10 +27,18 @@ atom.commands.add 'atom-text-editor', 'jsnippet:logger-debug', ->
 
 
 atom.commands.add 'atom-text-editor', 'sniphpet:mc-pre', ->
-    snippetBody = '\\\\mc::pre(${1:"_SERVER"});'
+    snippetBody = '\\\\mc::pre(\$${1:"_SERVER"});'
     atom.packages.activePackages.snippets?.mainModule?.insert snippetBody
 
 
 atom.commands.add 'atom-text-editor', 'sniphpet:mc-js', ->
     snippetBody = '\\\\mc::js(${1:"_SERVER"});'
+    atom.packages.activePackages.snippets?.mainModule?.insert snippetBody
+
+atom.commands.add 'atom-text-editor', 'sniphpet:logger-info', ->
+    snippetBody = '\\\\Log::info("${1:[LOGGER]}", [${2:"_SERVER"}]);'
+    atom.packages.activePackages.snippets?.mainModule?.insert snippetBody
+
+atom.commands.add 'atom-text-editor', 'sniphpet:logger-debug', ->
+    snippetBody = '\\\\Log::debug(${1:"[LOGGER]"}, [${2:"_SERVER"}]);'
     atom.packages.activePackages.snippets?.mainModule?.insert snippetBody

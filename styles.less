@@ -30,3 +30,11 @@ atom-text-editor {
 atom-text-editor::shadow .cursor {
   // border-color: red;
 }
+.tree-view *{
+    -webkit-user-drag : none !important;
+}
+atom-text-editor .line:not(.cursor-line) .trailing-whitespace,
+atom-text-editor::shadow .line:not(.cursor-line)  .trailing-whitespace{
+    background: rgba(250, 96, 105, 0.8);
+    color: white;
+}
